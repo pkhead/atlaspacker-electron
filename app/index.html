@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atlaspack</title>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+        <style>
+            #menubar button {
+                appearance: none;
+                height: 30px;
+                margin: 0;
+                border: none;
+                background-color: white;
+            }
+
+            #menubar button:hover {
+                background-color: #ddd
+            }
+
+            #menubar button:active {
+                background-color: #bbb
+            }
+
+            .prompt-box {
+                position: absolute;
+                background-color: white;
+                width: fit-content;
+                height: fit-content;
+                font-size: 14px;
+                padding: 12px;
+                border: solid 1px gray;
+                border-radius: 5px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            }
+
+            .prompt-box button {
+                appearance: none;
+                background-color: white;
+                border: solid 2px gray;
+                border-radius: 5px;
+                padding: 3px;
+                margin: 0;
+                margin-right: 5px;
+            }
+
+            .prompt-box .default {
+                border-color: orange;
+            }
+
+            .prompt-box button:hover {
+                background-color: #aaa;
+            }
+
+            .prompt-box .default:hover {
+                background-color: orange;
+            }
+
+            body {
+                font-family: "Arial", "serif";
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="main" style="position:absolute;left:0;top:0"></canvas>
+        <div id="footer" style="position:absolute;left:0;bottom:0;height:25px;">
+            <span id="name-field"></span>
+        </div>
+
+        <script src="renderer.js"></script>
+    </body>
+</html>
