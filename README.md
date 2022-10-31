@@ -2,6 +2,11 @@
  crappy electron atlas packer
 
  no change history yet
+# usage
+ drag your images onto the atlaspacker window.
+ move them around and such.
+ other things you can probably figure out.
+ (great documentation i know.)
 
 # installation
  prerequisites:
