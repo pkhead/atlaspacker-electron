@@ -21,13 +21,13 @@
     uint32_t y;
     uint32_t w;
     uint32_t h;
-    uint8_t name[]; // zero-terminated string
+    char name[]; // zero-terminated string
  };
 
  struct atlas_file {
     uint32_t image_size;
     uint8_t png_data[image_size];
     uint32_t num_rects;
-    struct atlas_rect[num_rects];
+    struct atlas_rect rects[num_rects];
  };
  ```
